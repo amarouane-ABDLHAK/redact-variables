@@ -1,0 +1,5 @@
+#!/bin/bash
+export foobar=[REDACTED]
+myfoo=[REDACTED]
+export ggg=[REDACTED]
+EXPORT jjj=[REDACTED]
