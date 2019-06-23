@@ -1,13 +1,23 @@
 {
-  "name": "dedact",
+  "name": "redact-variables",
   "version": "1.0.0",
-  "description": "",
+  "description": "redact sensitive and secret variables",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amarouane-ABDLHAK/redact.git"
+  },
+  "bin": {
+    "redact": "./cli.js"
+  },
   "keywords": [],
-  "author": "",
+  "author": "amarouane am0089@uah.edu",
   "license": "ISC",
-  "dependencies": {}
+  "homepage": "https://github.com/amarouane-ABDLHAK/redact.git",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
 }

@@ -1,4 +1,6 @@
+'use strict';
 const {extname} = require('path')
+const {get} = require('lodash')
 
 
 const get_file_extension = (filename) => {
@@ -7,7 +9,7 @@ const get_file_extension = (filename) => {
 
 var fs = require('fs')
 
-const reduct_file = (file_path, seperator) => {
+const redact_file = (file_path, seperator) => {
   const regex = new RegExp(`(.*)${seperator}(.*)`, 'g');
   fs.readFile(file_path, 'utf8', function (err,data) {
     if (err) {
@@ -23,12 +25,26 @@ const reduct_file = (file_path, seperator) => {
 
 
 const redact_bash_scripts = file_path => {
-    reduct_file(file_path, "=")
+    redact_file(file_path, "=")
 }
 
 const redact_json_file = file_path => {
- reduct_file(file_path, ":")
+ redact_file(file_path, ":")
 }
 
-redact_bash_scripts('./examples/set_envs.sh')
-redact_json_file('./examples/set_envs.json')
+const not_supported = arg => {
+  console.error(`${arg} file type is not supported yet`)
+}
+
+const mapping_files = {'.sh': redact_bash_scripts,
+'.json': redact_json_file
+}
+
+
+exports.redact =  file_path => {
+  const extenstion = get_file_extension(file_path);
+  get(mapping_files, extenstion, not_supported)(file_path)
+  
+
+
+}
