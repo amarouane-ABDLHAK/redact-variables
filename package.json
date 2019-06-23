@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/amarouane-ABDLHAK/redact.git"
+    "url": "https://github.com/amarouane-ABDLHAK/redact-variables.git"
   },
   "bin": {
     "redact": "./cli.js"
@@ -16,7 +16,7 @@
   "keywords": [],
   "author": "amarouane am0089@uah.edu",
   "license": "ISC",
-  "homepage": "https://github.com/amarouane-ABDLHAK/redact.git",
+  "homepage": "https://github.com/amarouane-ABDLHAK/redact-variables.git",
   "dependencies": {
     "lodash": "^4.17.11"
   }

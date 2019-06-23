@@ -5,7 +5,9 @@ Use this product if you want an easy tool to provide a redacted example of the f
 
 # How to use
 `$npm i redact-variables`
+<br>
 add `"redact": "redact <path_to_environement_variable_file>"` to your package.json
+<br>
 `Check <path_to_environement_variable_file>.example`
 
 
