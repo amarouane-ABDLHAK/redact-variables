@@ -1,13 +1,14 @@
 'use strict';
 const {extname} = require('path')
 const {get} = require('lodash')
+const fs = require('fs')
 
 
 const get_file_extension = (filename) => {
     return extname(filename)
 }
 
-var fs = require('fs')
+
 
 const redact_file = (file_path, seperator) => {
   const regex = new RegExp(`(.*)${seperator}(.*)`, 'g');
@@ -41,10 +42,10 @@ const mapping_files = {'.sh': redact_bash_scripts,
 }
 
 
-exports.redact =  file_path => {
-  const extenstion = get_file_extension(file_path);
-  get(mapping_files, extenstion, not_supported)(file_path)
-  
-
-
+const redact =  file_path => {
+  const extension = get_file_extension(file_path);
+  get(mapping_files, extension, not_supported)(file_path);
 }
+
+module.exports = {redact, mapping_files, get_file_extension, redact_json_file, not_supported}
+
