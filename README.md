@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/amarouane-ABDLHAK/redact-variables.svg?branch=master)](https://travis-ci.com/amarouane-ABDLHAK/redact-variables)
+
 # Redact variables
 
 ## Motivation
