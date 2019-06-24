@@ -5,10 +5,9 @@ const fs = require('fs')
 
 
 const get_file_extension = (filename) => {
+  // Returns the file extension
     return extname(filename)
 }
-
-
 
 const redact_file = (file_path, seperator) => {
   const regex = new RegExp(`(.*)${seperator}(.*)`, 'g');
