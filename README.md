@@ -1,11 +1,11 @@
-[![Build Status](https://travis-ci.com/amarouane-ABDLHAK/redact-variables.svg?branch=master)](https://travis-ci.com/amarouane-ABDLHAK/redact-variables) [![MIT License](https://img.shields.io/aur/license/pac.svg)](https://github.com/amarouane-ABDLHAK/redact-variables/blob/master/LICENSE) ![NPM VErsion](https://img.shields.io/npm/v/redact-variables.svg)
+[![Build Status](https://travis-ci.com/amarouane-ABDLHAK/redact-variables.svg?branch=master)](https://travis-ci.com/amarouane-ABDLHAK/redact-variables) [![MIT License](https://img.shields.io/aur/license/pac.svg)](https://github.com/amarouane-ABDLHAK/redact-variables/blob/master/LICENSE) ![NPM VErsion](https://img.shields.io/npm/v/redact-variables.svg) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/5ec805e72c214630a65d037cedc6a8e6)](https://www.codacy.com/app/amarouane-ABDLHAK/redact-variables?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=amarouane-ABDLHAK/redact-variables&amp;utm_campaign=Badge_Grade)
 
 # Redact variables
 
 ## Motivation
 Use this product if you want an easy tool to provide a redacted example of the file holding your environement variables.
 
-# How to use
+## How to use
 `$npm i redact-variables`
 <br>
 add `"redact": "redact <path_to_environement_variable_file>"` to your package.json
@@ -13,7 +13,7 @@ add `"redact": "redact <path_to_environement_variable_file>"` to your package.js
 `Check <path_to_environement_variable_file>.example`
 
 
-# Supported files
+## Supported files
 <li>
 Bash
 </li>
@@ -26,7 +26,7 @@ JSON
 This library is primarily written for node.js. The library makes use of `fs.writeFile` function and hence needs node.js 8.0.0 or higher. If this is a problem for you please open an issue and we may consider using a different function to write into a file so an older node version can be supported.
 
 
-# Install
+### Install
 With [node.js](http://nodejs.org/) and [npm](https://www.npmjs.com/):
 
 	npm install redact-variables -g
@@ -34,9 +34,9 @@ With [node.js](http://nodejs.org/) and [npm](https://www.npmjs.com/):
 You can now use `redact` from the command line.
 
 
-## Examples
+### Examples
 
-### Bash script
+#### Bash script
 
 If you want to redact all declared variables in a bash script foobar.sh you need to run <br>
 `$redact foobar.sh` <br>
@@ -51,7 +51,7 @@ foobar.sh.example contains
 export FOO=[REDACTED]
 ```
 
-### JSON file
+#### JSON file
 
 If you want to redact all declared variables in a JSON file foobar.json you need to run <br>
 `$redact foobar.json` <br>
@@ -77,6 +77,6 @@ foobar.json.example contains
 ```
 
 
-## Contribution 
+#### Contribution 
 To contribute to this project fork <br>
-https://github.com/amarouane-ABDLHAK/redact-variables
+[Project-URL](https://github.com/amarouane-ABDLHAK/redact-variables)

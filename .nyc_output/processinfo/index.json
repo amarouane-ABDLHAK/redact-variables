@@ -1,0 +1,1 @@
+{"processes":{"16922fd5-c32c-42a3-896e-10319c1b7b52":{"parent":null,"children":["fb81503c-68fc-4ba2-9f59-fe0aab2754fb"]},"fb81503c-68fc-4ba2-9f59-fe0aab2754fb":{"parent":"16922fd5-c32c-42a3-896e-10319c1b7b52","children":[]}},"files":{"/home/amarouane/workspace/github/redact/index.js":["fb81503c-68fc-4ba2-9f59-fe0aab2754fb"]},"externalIds":{}}
