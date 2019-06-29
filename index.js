@@ -9,8 +9,8 @@ const get_file_extension = (filename) => {
     return extname(filename)
 }
 
-const redact_file = (file_path, seperator) => {
-  const regex = new RegExp(`(.*)${seperator}(.*)`, 'g');
+const redact_file = (file_path, seperator, extra_regex="") => {
+  const regex = new RegExp(`(.*)${seperator}${extra_regex}(.*)`, 'g');
   fs.readFile(file_path, 'utf8', function (err,data) {
     if (err) {
       return console.log(err);
@@ -29,7 +29,7 @@ const redact_bash_scripts = file_path => {
 }
 
 const redact_json_file = file_path => {
- redact_file(file_path, ":")
+ redact_file(file_path, ":", ".*[\"|\']")
 }
 
 const not_supported = arg => {

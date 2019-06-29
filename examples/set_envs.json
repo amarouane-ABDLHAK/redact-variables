@@ -1,4 +1,14 @@
 {
     "foo": "bar",
-    "other_foo": "bar"
+    "other_foo": {
+        "foo": "bar"
+    } ,
+    "multi_keys": {
+        "key1": {
+            "sub_key1": {
+                "key3": "Value"
+            }
+        },
+        "key2": "value"
+    } 
 }

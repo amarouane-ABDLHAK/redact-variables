@@ -60,13 +60,19 @@ This command line will create in the same directory a file foobar.json.example c
 foobar.json contains 
 ```
 {
-  "foo" : "bar"
+  "foo" : "bar",
+  "other_foo" : {
+    "more_foo" : "bar"
+  }
 }
 ```
 foobar.json.example contains
 ```
 {
-  "foo" : [REDACTED]
+  "foo" : [REDACTED],
+  "other_foo" : {
+    "more_foo" : [REDACTED]
+  }
 }
 ```
 

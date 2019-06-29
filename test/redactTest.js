@@ -22,14 +22,14 @@ describe('Redact', () => {
         let extension = index.get_file_extension('../examples/set_envs.json') 
         assert.equal(extension, '.json')
     })
-    it('Should resturen redact_bash_file function', () => {
+    it('Should return redact_bash_file function', () => {
         let extension = index.get_file_extension('../examples/set_envs.sh')
         let returned_function = get(index.mapping_files, extension, undefined) 
         assert.isFunction(returned_function, 'bash function')
         assert.equal(returned_function.name, 'redact_bash_scripts')
     })
 
-    it('Should resturen redact_json_file function', () => {
+    it('Should return redact_json_file function', () => {
         let extension = index.get_file_extension('../examples/set_envs.json')
         let returned_function = get(index.mapping_files, extension, undefined) 
         assert.isFunction(returned_function, 'jason function')
@@ -44,7 +44,7 @@ describe('Redact', () => {
             }
         
             let count = (data.match(/\[REDACTED\]/g) || []).length;
-            assert.equal(count, 2)
+            assert.equal(count, 4)
     
           });
     })

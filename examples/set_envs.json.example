@@ -1,4 +1,14 @@
 {
     "foo":[REDACTED]
-    "other_foo":[REDACTED]
+    "other_foo": {
+        "foo":[REDACTED]
+    } ,
+    "multi_keys": {
+        "key1": {
+            "sub_key1": {
+                "key3":[REDACTED]
+            }
+        },
+        "key2":[REDACTED]
+    } 
 }
