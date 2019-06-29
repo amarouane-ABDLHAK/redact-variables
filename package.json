@@ -1,6 +1,6 @@
 {
   "name": "redact-variables",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "redact sensitive and secret variables",
   "main": "index.js",
   "scripts": {
