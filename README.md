@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.com/amarouane-ABDLHAK/redact-variables.svg?branch=master)](https://travis-ci.com/amarouane-ABDLHAK/redact-variables)
 
-[![MIT License](https://img.shields.io/aur/license/pac.svg)](https://github.com/amarouane-ABDLHAK/redact-variables/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/aur/license/pac.svg)](https://github.com/amarouane-ABDLHAK/redact-variables/blob/master/LICENSE) 
+
+https://img.shields.io/npm/v/redact-variables.svg
 
 # Redact variables
 
