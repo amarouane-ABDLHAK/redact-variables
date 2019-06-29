@@ -20,3 +20,57 @@ Bash
 <li>
 JSON
 </li>
+
+### Prerequesites
+
+This library is primarily written for node.js. The library makes use of `fs.writeFile` function and hence needs node.js 8.0.0 or higher. If this is a problem for you please open an issue and we may consider using a different function to write into a file so an older node version can be supported.
+
+
+# Install
+With [node.js](http://nodejs.org/) and [npm](https://www.npmjs.com/):
+
+	npm install redact-variables -g
+
+You can now use `redact` from the command line.
+
+
+## Examples
+
+### Bash script
+
+If you want to redact all declared variables in a bash script foobar.sh you need to run <br>
+`$redact foobar.sh` <br>
+This command line will create in the same directory a file foobar.sh.example containing redacted variables.
+<br>
+foobar.sh contains 
+```
+export FOO=bar
+```
+foobar.sh.example contains
+```
+export FOO=[REDACTED]
+```
+
+### JSON file
+
+If you want to redact all declared variables in a JSON file foobar.json you need to run <br>
+`$redact foobar.json` <br>
+This command line will create in the same directory a file foobar.json.example containing redacted variables.
+<br>
+foobar.json contains 
+```
+{
+  "foo" : "bar"
+}
+```
+foobar.json.example contains
+```
+{
+  "foo" : [REDACTED]
+}
+```
+
+
+## Contribution 
+To contribute to this project fork <br>
+https://github.com/amarouane-ABDLHAK/redact-variables
