@@ -1,6 +1,6 @@
 {
   "name": "redact-variables",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "redact sensitive and secret variables",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,11 @@
   "bin": {
     "redact": "./cli.js"
   },
-  "keywords": ["Redact", "Security", "environment-variables"],
+  "keywords": [
+    "Redact",
+    "Security",
+    "environment-variables"
+  ],
   "author": "amarouane am0089@uah.edu",
   "license": "MIT",
   "homepage": "https://github.com/amarouane-ABDLHAK/redact-variables.git",
