@@ -13,9 +13,9 @@
   "bin": {
     "redact": "./cli.js"
   },
-  "keywords": [],
+  "keywords": ["Redact", "Security", "environment-variables"],
   "author": "amarouane am0089@uah.edu",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://github.com/amarouane-ABDLHAK/redact-variables.git",
   "dependencies": {
     "lodash": "^4.17.11"
