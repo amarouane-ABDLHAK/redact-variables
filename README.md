@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ebfdb488d4af40a9b7910f785af78655)](https://app.codacy.com/app/amarouane-ABDLHAK/redact-variables?utm_source=github.com&utm_medium=referral&utm_content=amarouane-ABDLHAK/redact-variables&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.com/amarouane-ABDLHAK/redact-variables.svg?branch=master)](https://travis-ci.com/amarouane-ABDLHAK/redact-variables) [![MIT License](https://img.shields.io/aur/license/pac.svg)](https://github.com/amarouane-ABDLHAK/redact-variables/blob/master/LICENSE) ![NPM VErsion](https://img.shields.io/npm/v/redact-variables.svg)
 
 # Redact variables
