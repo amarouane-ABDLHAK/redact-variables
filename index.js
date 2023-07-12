@@ -1,11 +1,14 @@
 'use strict';
-const {extname} = require('path')
+const {extname, basename} = require('path')
 const {get} = require('lodash')
 const fs = require('fs')
 
 
 const get_file_extension = (filename) => {
   // Returns the file extension
+    if (basename(filename).startsWith(".")) {
+      return ".dotfile"
+    }
     return extname(filename)
 }
 
@@ -37,7 +40,8 @@ const not_supported = arg => {
 }
 
 const mapping_files = {'.sh': redact_bash_scripts,
-'.json': redact_json_file
+'.json': redact_json_file,
+".dotfile": redact_bash_scripts
 }
 
 

@@ -1,6 +1,6 @@
 {
   "name": "redact-variables",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "redact sensitive and secret variables",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "chai": "^4.2.0",
     "chai-fs": "^2.0.0",
     "coveralls": "^3.0.4",
-    "mocha": "^6.1.4",
+    "mocha": "^10.2.0",
     "nyc": "^14.1.1"
   }
 }

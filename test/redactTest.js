@@ -17,6 +17,10 @@ describe('Redact', () => {
         let extension = index.get_file_extension('../examples/set_envs.sh') 
         assert.equal(extension, '.sh')
     })
+    it('dot files  .dotfile', () => {
+        let extension = index.get_file_extension('../examples/.env') 
+        assert.equal(extension, '.dotfile')
+    })
 
     it('JASON files extension should return .json', () => {
         let extension = index.get_file_extension('../examples/set_envs.json') 
@@ -24,6 +28,12 @@ describe('Redact', () => {
     })
     it('Should return redact_bash_file function', () => {
         let extension = index.get_file_extension('../examples/set_envs.sh')
+        let returned_function = get(index.mapping_files, extension, undefined) 
+        assert.isFunction(returned_function, 'bash function')
+        assert.equal(returned_function.name, 'redact_bash_scripts')
+    })
+    it('Should return redact_bash_file function', () => {
+        let extension = index.get_file_extension('../examples/.env')
         let returned_function = get(index.mapping_files, extension, undefined) 
         assert.isFunction(returned_function, 'bash function')
         assert.equal(returned_function.name, 'redact_bash_scripts')
@@ -51,6 +61,12 @@ describe('Redact', () => {
 
     it('Should redact a bash script', () => {
         let file_path = `${currentPath}/examples/set_envs.sh`
+        index.redact(file_path)
+        assert.fileContentMatch(`${file_path}.example`, /=\[REDACTED\]/, "Success");
+
+    })
+    it('Should redact a dotenv file', () => {
+        let file_path = `${currentPath}/examples/.env`
         index.redact(file_path)
         assert.fileContentMatch(`${file_path}.example`, /=\[REDACTED\]/, "Success");
 

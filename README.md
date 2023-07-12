@@ -76,7 +76,20 @@ foobar.json.example contains
 }
 ```
 
+#### dotenv file
 
+If you want to redact all declared variables in a dotenv file .env you need to run <br>
+`$redact .env` <br>
+This command line will create in the same directory a file .env.example containing redacted variables.
+<br>
+.env contains 
+```
+foo=bar
+```
+.env.example contains
+```
+foo=[REDACTED]
+```
 #### Contribution 
 To contribute to this project fork <br>
 [Project-URL](https://github.com/amarouane-ABDLHAK/redact-variables)
