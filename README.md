@@ -20,7 +20,8 @@ Bash
 <li>
 JSON
 </li>
-
+dotenv
+</li>
 ### Prerequesites
 
 This library is primarily written for node.js. The library makes use of `fs.writeFile` function and hence needs node.js 8.0.0 or higher. If this is a problem for you please open an issue and we may consider using a different function to write into a file so an older node version can be supported.
